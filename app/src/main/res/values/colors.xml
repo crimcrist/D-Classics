@@ -2,4 +2,12 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+    <!-- D'Classics brand palette (from Figma) -->
+    <color name="primary">#4A2B21</color>
+    <color name="secondary">#AE938A</color>
+    <color name="background">#FCF8F5</color>
+    <color name="hint">#C7C3C3</color>
+    <color name="on_primary">#FCF8F5</color>
+    <color name="error">#C62828</color>
 </resources>

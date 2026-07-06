@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Cream mask for the welcome header. Deeper, rounder elliptical arc matching
+     the near-circular Ellipse 9 (609x677) that clips the welcome page image. -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="412dp"
+    android:height="150dp"
+    android:viewportWidth="412"
+    android:viewportHeight="150">
+    <path
+        android:fillColor="@color/background"
+        android:pathData="M0,0 C103,119 309,119 412,0 L412,150 L0,150 Z" />
+</vector>

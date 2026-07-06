@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_dialog"
+    android:orientation="vertical"
+    android:padding="24dp">
+
+    <!-- Header -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:text="@string/forgot_title"
+            android:textColor="@color/primary"
+            android:textSize="24sp"
+            android:fontFamily="@font/eb_garamond_medium" />
+
+        <ImageView
+            android:id="@+id/btn_close_forgot"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:src="@drawable/ic_x"
+            android:contentDescription="@string/close" />
+    </RelativeLayout>
+
+    <!-- Default pop up -->
+    <LinearLayout
+        android:id="@+id/group_forgot_form"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:text="@string/forgot_subtitle"
+            android:textColor="@color/primary"
+            android:textSize="16sp"
+            android:fontFamily="@font/eb_garamond_medium" />
+
+        <!-- Email input -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="16dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:background="@drawable/bg_input"
+            android:paddingHorizontal="14dp">
+
+            <ImageView
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:src="@drawable/ic_mail"
+                android:contentDescription="@null" />
+
+            <EditText
+                android:id="@+id/et_forgot_email"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="12dp"
+                android:background="@android:color/transparent"
+                android:hint="@string/hint_email"
+                android:textColorHint="@color/hint"
+                android:textColor="@color/primary"
+                android:textSize="13sp"
+                android:letterSpacing="0.03"
+                android:inputType="textEmailAddress"
+                android:fontFamily="@font/montserrat_semibold" />
+        </LinearLayout>
+
+        <!-- Validation error -->
+        <TextView
+            android:id="@+id/tv_forgot_error"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:textColor="@color/error"
+            android:textSize="12sp"
+            android:letterSpacing="0.02"
+            android:fontFamily="@font/montserrat_semibold"
+            android:visibility="gone" />
+
+        <!-- Submit -->
+        <TextView
+            android:id="@+id/btn_submit_forgot"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/bg_button_primary"
+            android:gravity="center"
+            android:text="@string/submit"
+            android:textColor="@color/on_primary"
+            android:textSize="16sp"
+            android:letterSpacing="0.05"
+            android:fontFamily="@font/montserrat_semibold" />
+    </LinearLayout>
+
+    <!-- Confirmation pop up -->
+    <LinearLayout
+        android:id="@+id/group_forgot_success"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:text="@string/forgot_success"
+            android:textColor="@color/primary"
+            android:textSize="16sp"
+            android:fontFamily="@font/eb_garamond_medium" />
+
+        <TextView
+            android:id="@+id/btn_continue_forgot"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="70dp"
+            android:background="@drawable/bg_button_primary"
+            android:gravity="center"
+            android:text="@string/action_continue"
+            android:textColor="@color/on_primary"
+            android:textSize="16sp"
+            android:letterSpacing="0.05"
+            android:fontFamily="@font/montserrat_semibold" />
+    </LinearLayout>
+</LinearLayout>

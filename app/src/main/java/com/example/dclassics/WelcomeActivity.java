@@ -1,7 +1,7 @@
 package com.example.dclassics;
 
+import android.content.Intent;
 import android.os.Bundle;
-import android.widget.TextView;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -9,21 +9,22 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
-public class MainActivity extends AppCompatActivity {
+public class WelcomeActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_welcome);
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
-            Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
+            Insets bars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
+            v.setPadding(0, 0, 0, bars.bottom);
             return insets;
         });
 
-        // test storing username
-        TextView welcome = findViewById(R.id.tv_welcome);
-        welcome.setText("Username: " + Session.username);
+        findViewById(R.id.btn_login).setOnClickListener(v ->
+                startActivity(new Intent(this, LoginActivity.class)));
+        findViewById(R.id.btn_signup).setOnClickListener(v ->
+                startActivity(new Intent(this, RegisterActivity.class)));
     }
 }

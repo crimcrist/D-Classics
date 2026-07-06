@@ -1,3 +1,47 @@
 <resources>
     <string name="app_name">D\'Classics</string>
+
+    <!-- Shared -->
+    <string name="tagline">Your Gateway To\nTimeless Literature</string>
+    <string name="copyright">© 2026 D’Classics Books</string>
+    <string name="log_in">Log In</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="or">OR</string>
+
+    <!-- Welcome -->
+    <string name="logo_desc">D’Classics Books logo</string>
+
+    <!-- Login -->
+    <string name="welcome_back">Welcome Back!</string>
+    <string name="login_subtitle">Log in to your account by filling the forms below</string>
+    <string name="hint_username">Enter Your Username</string>
+    <string name="hint_password">Enter Your Password</string>
+    <string name="remember_me">Remember Me</string>
+    <string name="forgot_password">Forgot Password</string>
+    <string name="forgot_title">Forgot Your Password?</string>
+    <string name="forgot_subtitle">Please enter your registered e-mail</string>
+    <string name="submit">Submit</string>
+    <string name="action_continue">Continue</string>
+    <string name="forgot_success">We have sent you an e-mail if your account was found registered.</string>
+    <string name="continue_guest">Continue as Guest</string>
+    <string name="no_account">Don’t have an account?</string>
+
+    <!-- Register -->
+    <string name="get_started">Get Started!</string>
+    <string name="register_subtitle">Create an account by filling the forms below</string>
+    <string name="hint_email">Enter Your E-mail Address</string>
+    <string name="hint_confirm_password">Confirm Your Password</string>
+    <string name="i_agree">I Agree to</string>
+    <string name="terms_service">Terms and Service</string>
+    <string name="have_account">Already have an account?</string>
+    <string name="close">Close</string>
+    <!-- Register validation -->
+    <string name="err_email_empty">Email must not be empty.</string>
+    <string name="err_email">Email must be valid (contains @ and .com).</string>
+    <string name="err_username">Username must not be empty.</string>
+    <string name="err_password_empty">Password must not be empty.</string>
+    <string name="err_password_alnum">Password must be alphanumeric (contains both letters and numbers).</string>
+    <string name="err_confirm">Confirm password must match password.</string>
+    <string name="err_terms">You must agree to Terms and Service.</string>
+    <string name="terms_body">By using D’Classic Books, you agree to the following terms:\n•  Provide accurate information when creating an account.\n•  Keep your login credentials secure.\n•  Use the platform for personal and lawful purposes only.\n•  Respect copyrights and intellectual property rights.\n•  Do not copy, distribute, or misuse any content without permission.\n•  We may update these terms at any time to improve our services.\n•  Your personal information will be handled in accordance with our privacy practices.\n•  Continued use of the platform indicates acceptance of these terms.\nThank you for choosing D’Classic Books. Enjoy your reading journey!</string>
 </resources>

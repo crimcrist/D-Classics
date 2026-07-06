@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Cream mask for the login / register headers. Reveals the bookshelf image
+     through an elliptical arc that dips lowest at the centre and sweeps up at
+     the sides, matching the shallow Ellipse 9 (656x336) in the Figma design.
+     Sized as an arc-only band (dip ~37) so the image reaches the design curve. -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="412dp"
+    android:height="40dp"
+    android:viewportWidth="412"
+    android:viewportHeight="40">
+    <path
+        android:fillColor="@color/background"
+        android:pathData="M0,0 C103,49 309,49 412,0 L412,40 L0,40 Z" />
+</vector>
