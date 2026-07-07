@@ -10,4 +10,5 @@
     <color name="hint">#C7C3C3</color>
     <color name="on_primary">#FCF8F5</color>
     <color name="error">#C62828</color>
+    <color name="phone_bar">#F8F0E2</color>
 </resources>

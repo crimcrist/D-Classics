@@ -44,4 +44,21 @@
     <string name="err_confirm">Confirm password must match password.</string>
     <string name="err_terms">You must agree to Terms and Service.</string>
     <string name="terms_body">By using D’Classic Books, you agree to the following terms:\n•  Provide accurate information when creating an account.\n•  Keep your login credentials secure.\n•  Use the platform for personal and lawful purposes only.\n•  Respect copyrights and intellectual property rights.\n•  Do not copy, distribute, or misuse any content without permission.\n•  We may update these terms at any time to improve our services.\n•  Your personal information will be handled in accordance with our privacy practices.\n•  Continued use of the platform indicates acceptance of these terms.\nThank you for choosing D’Classic Books. Enjoy your reading journey!</string>
+
+    <!--Detail Book-->
+    <string name="book_store_title">D’Classics Books</string>
+    <string name="back_arrow">‹</string>
+    <string name="book_title">Laskar Pelangi</string>
+    <string name="book_author">Andrea Hirata</string>
+    <string name="enter_address">Enter Your Address</string>
+    <string name="enter_phone">Enter Your Phone Number</string>
+    <string name="buy_now">Buy Now</string>
+    <string name="synopsis_title">Sinopsis</string>
+    <string name="select_option">Select Option</string>
+    <string name="digital">Digital</string>
+    <string name="physical">Physical</string>
+    <string name="book_cover">Book Cover</string>
+    <string name="address_icon">Address Icon</string>
+    <string name="phone_icon">Phone Icon</string>
+    <string name="laskar_pelangi_synopsis">A story of ten children in Belitung who struggle to achieve their dreams through education.</string>
 </resources>

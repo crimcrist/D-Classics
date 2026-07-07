@@ -12,8 +12,8 @@ import androidx.core.content.ContextCompat;
 
 public class BookDetailActivity extends AppCompatActivity {
 
-    TextView btnBack, tvBookTitle, tvBookAuthor, tvSynopsis;
-    ImageView imgBookCover;
+    TextView tvBookTitle, tvBookAuthor, tvSynopsis;
+    ImageView btnBack, imgBookCover;
     Button btnBuyNow, btnDigital, btnPhysical;
     EditText etAddress, etPhone;
 

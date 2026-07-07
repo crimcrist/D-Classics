@@ -49,26 +49,22 @@
                 android:gravity="center_vertical"
                 android:orientation="horizontal">
 
-                <TextView
+                <ImageView
                     android:id="@+id/btnBack"
-                    android:layout_width="28dp"
-                    android:layout_height="28dp"
-                    android:background="@drawable/circle_brown"
                     android:clickable="true"
                     android:focusable="true"
-                    android:gravity="center"
-                    android:includeFontPadding="false"
-                    android:text="‹"
-                    android:textColor="#FFFFFF"
-                    android:textSize="24sp"
-                    android:textStyle="bold" />
+                    android:layout_width="26dp"
+                    android:layout_height="26dp"
+                    android:contentDescription="@string/address_icon"
+                    android:src="@drawable/ic_back"
+                    />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="10dp"
                     android:fontFamily="serif"
-                    android:text="D’Classics Books"
+                    android:text="@string/book_store_title"
                     android:textColor="#4A2B21"
                     android:textSize="25sp"
                     android:textStyle="bold" />
@@ -105,7 +101,7 @@
                         android:id="@+id/tvBookTitle"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Laskar Pelangi"
+                        android:text="@string/book_title"
                         android:textColor="#FFFFFF"
                         android:textSize="17sp"
                         android:textStyle="bold" />
@@ -114,7 +110,7 @@
                         android:id="@+id/tvBookAuthor"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Andrea Hirata"
+                        android:text="@string/book_author"
                         android:textColor="#FFFFFF"
                         android:textSize="11sp" />
 
@@ -134,7 +130,7 @@
                         android:id="@+id/imgBookCover"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:contentDescription="Book Cover"
+                        android:contentDescription="@string/book_cover"
                         android:scaleType="centerCrop"
                         android:src="@drawable/laskar_pelangi_2" />
 
@@ -168,8 +164,9 @@
                     <ImageView
                         android:layout_width="30dp"
                         android:layout_height="30dp"
-                        android:contentDescription="Address Icon"
-                        android:src="@drawable/ic_location_gray" />
+                        android:contentDescription="@string/address_icon"
+                        android:src="@drawable/ic_location_gray"
+                        app:tint="@color/secondary"/>
 
                     <EditText
                         android:id="@+id/etAddress"
@@ -177,12 +174,13 @@
                         android:layout_height="match_parent"
                         android:layout_marginStart="10dp"
                         android:layout_weight="1"
+                        android:autofillHints="postalAddress"
                         android:background="@android:color/transparent"
-                        android:hint="Enter Your Address"
+                        android:hint="@string/enter_address"
                         android:inputType="textPostalAddress"
                         android:singleLine="true"
                         android:textColor="#000000"
-                        android:textColorHint="#C7C3C3"
+                        android:textColorHint="#968f8d"
                         android:textSize="13sp" />
 
                 </LinearLayout>
@@ -215,8 +213,9 @@
                     <ImageView
                         android:layout_width="30dp"
                         android:layout_height="30dp"
-                        android:contentDescription="Phone Icon"
-                        android:src="@drawable/ic_phone_gray" />
+                        android:contentDescription="@string/phone_icon"
+                        android:src="@drawable/ic_phone_gray"
+                        app:tint="@color/secondary"/>
 
                     <EditText
                         android:id="@+id/etPhone"
@@ -224,12 +223,13 @@
                         android:layout_height="match_parent"
                         android:layout_marginStart="10dp"
                         android:layout_weight="1"
+                        android:autofillHints="phone"
                         android:background="@android:color/transparent"
-                        android:hint="Enter Your Phone Number"
+                        android:hint="@string/enter_phone"
                         android:inputType="phone"
                         android:singleLine="true"
                         android:textColor="#000000"
-                        android:textColorHint="#C7C3C3"
+                        android:textColorHint="#968f8d"
                         android:textSize="13sp" />
 
                 </LinearLayout>
@@ -258,7 +258,7 @@
                     android:backgroundTint="@null"
                     android:elevation="0dp"
                     android:stateListAnimator="@null"
-                    android:text="Buy Now"
+                    android:text="@string/buy_now"
                     android:textAllCaps="false"
                     android:textColor="@color/primary"
                     android:textStyle="bold" />
@@ -289,7 +289,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Sinopsis"
+                        android:text="@string/synopsis_title"
                         android:textColor="#AE938A"
                         android:textSize="16sp"
                         android:textStyle="bold" />
@@ -299,7 +299,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="6dp"
-                        android:text="A story of ten children in Belitung who struggle to achieve their dreams through education."
+                        android:text="@string/laskar_pelangi_synopsis"
                         android:textColor="@color/primary"
                         android:textSize="11sp" />
 
@@ -322,7 +322,7 @@
                 android:layout_marginTop="10dp"
                 android:layout_marginEnd="20dp"
                 android:padding="3dp"
-                android:text="Select Option"
+                android:text="@string/select_option"
                 android:textColor="#AE938A"
                 android:textSize="16sp"
                 android:textStyle="bold" />
@@ -342,7 +342,7 @@
 
                 <androidx.cardview.widget.CardView
                     android:layout_width="0dp"
-                    android:layout_height="46dp"
+                    android:layout_height="48dp"
                     android:layout_weight="1"
                     app:cardBackgroundColor="#FFFFFF"
                     app:cardCornerRadius="10dp"
@@ -358,7 +358,7 @@
                         android:backgroundTint="@null"
                         android:elevation="0dp"
                         android:stateListAnimator="@null"
-                        android:text="Digital"
+                        android:text="@string/digital"
                         android:textAllCaps="false"
                         android:textColor="@color/primary"
                         android:textStyle="bold" />
@@ -367,7 +367,7 @@
 
                 <androidx.cardview.widget.CardView
                     android:layout_width="0dp"
-                    android:layout_height="46dp"
+                    android:layout_height="48dp"
                     android:layout_marginStart="4dp"
                     android:layout_weight="1"
                     app:cardBackgroundColor="@color/primary"
@@ -384,7 +384,7 @@
                         android:backgroundTint="@null"
                         android:elevation="0dp"
                         android:stateListAnimator="@null"
-                        android:text="Physical"
+                        android:text="@string/physical"
                         android:textAllCaps="false"
                         android:textColor="#FFFFFF"
                         android:textStyle="bold" />
