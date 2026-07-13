@@ -1,23 +1,23 @@
 package com.example.dclassics;
 
 import android.os.Bundle;
-import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.AppCompatButton;
 import androidx.core.content.ContextCompat;
 
 public class BookDetailActivity extends AppCompatActivity {
 
-    TextView tvBookTitle, tvBookAuthor, tvSynopsis;
-    ImageView btnBack, imgBookCover;
-    Button btnBuyNow, btnDigital, btnPhysical;
-    EditText etAddress, etPhone;
+    private TextView tvBookTitle, tvBookAuthor, tvSynopsis;
+    private ImageView btnBack, imgBookCover;
+    private AppCompatButton btnBuyNow, btnDigital, btnPhysical;
+    private EditText etAddress, etPhone;
 
-    String selectedOption = "Physical";
+    private String selectedOption = "Physical";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,7 +40,7 @@ public class BookDetailActivity extends AppCompatActivity {
         String intentTitle = getIntent().getStringExtra("book_title");
         String intentAuthor = getIntent().getStringExtra("book_author");
         String intentSynopsis = getIntent().getStringExtra("book_synopsis");
-        int bookImage = getIntent().getIntExtra("book_image", R.drawable.laskar_pelangi_2);
+        int bookImage = getIntent().getIntExtra("book_image", R.drawable.book_laskar_pelangi);
 
         final String bookTitle = intentTitle != null ? intentTitle : "Laskar Pelangi";
         final String bookAuthor = intentAuthor != null ? intentAuthor : "Andrea Hirata";
@@ -53,7 +53,6 @@ public class BookDetailActivity extends AppCompatActivity {
         tvSynopsis.setText(bookSynopsis);
         imgBookCover.setImageResource(bookImage);
 
-        // default: Physical kepilih
         updateOptionButton("Physical");
 
         btnBack.setOnClickListener(v -> finish());
@@ -84,7 +83,11 @@ public class BookDetailActivity extends AppCompatActivity {
                 return;
             }
 
-            Toast.makeText(this, "Buying " + bookTitle + " - " + selectedOption, Toast.LENGTH_SHORT).show();
+            Toast.makeText(
+                    this,
+                    "Buying " + bookTitle + " - " + selectedOption,
+                    Toast.LENGTH_SHORT
+            ).show();
         });
     }
 

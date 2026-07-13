@@ -41,6 +41,10 @@
             android:name=".StoreActivity"
             android:exported="false" />
 
+        <activity
+            android:name=".AllBooksActivity"
+            android:exported="false" />
+
     </application>
 
 </manifest>

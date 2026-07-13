@@ -1,21 +1,472 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:background="#F7F4F2">
 
-    <TextView
-        android:id="@+id/tv_welcome"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+    <!-- CONTENT -->
+    <ScrollView
+        android:id="@+id/scrollHome"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:clipToPadding="false"
+        android:fillViewport="true"
+        android:overScrollMode="never"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/bottomNav"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingStart="30dp"
+            android:paddingTop="13dp"
+            android:paddingEnd="30dp"
+            android:paddingBottom="14dp">
+
+            <!-- HELLO -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="serif"
+                    android:text="Hello, "
+                    android:textColor="#4A2B21"
+                    android:textSize="21sp" />
+
+                <TextView
+                    android:id="@+id/tv_welcome"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="serif"
+                    android:text="USER"
+                    android:textColor="#C8AAA1"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <!-- FEATURED BOOKS HEADER -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="8dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="serif"
+                    android:text="Featured Books"
+                    android:textColor="#4A2B21"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:id="@+id/tvMoreBooks"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="More"
+                        android:textColor="#4A2B21"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:layout_marginStart="4dp"
+                        android:contentDescription="More"
+                        android:src="@drawable/arrow_next" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- BOOK ROW 1 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <!-- ATOMIC HABITS -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="40dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/imgAtomicHabits"
+                        android:layout_width="match_parent"
+                        android:layout_height="195dp"
+                        android:adjustViewBounds="false"
+                        android:background="@android:color/transparent"
+                        android:contentDescription="Atomic Habits"
+                        android:padding="0dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/book_atomic_habit" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="18dp"
+                        android:layout_marginTop="0dp"
+                        android:fontFamily="serif"
+                        android:includeFontPadding="false"
+                        android:maxLines="1"
+                        android:text="Atomic Habits"
+                        android:textColor="#4A2B21"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="18dp"
+                        android:layout_marginTop="2dp"
+                        android:includeFontPadding="false"
+                        android:maxLines="1"
+                        android:text="James Clear"
+                        android:textColor="#9B8278"
+                        android:textSize="10sp" />
+
+                </LinearLayout>
+
+                <!-- Rich Dad Poor Dad -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/imgRichDad"
+                        android:layout_width="match_parent"
+                        android:layout_height="195dp"
+                        android:adjustViewBounds="false"
+                        android:background="@android:color/transparent"
+                        android:contentDescription="Rich Dad Poor Dad"
+                        android:padding="0dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/book_rich_dad" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="18dp"
+                        android:layout_marginTop="0dp"
+                        android:fontFamily="serif"
+                        android:includeFontPadding="false"
+                        android:maxLines="1"
+                        android:text="Rich Dad Poor Dad"
+                        android:textColor="#4A2B21"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="18dp"
+                        android:layout_marginTop="2dp"
+                        android:includeFontPadding="false"
+                        android:maxLines="1"
+                        android:text="Robert T. Kiyosaki"
+                        android:textColor="#9B8278"
+                        android:textSize="10sp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!-- BOOK ROW 2 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:orientation="horizontal">
+
+                <!-- THE HOBBIT -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="40dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/imgHobbit"
+                        android:layout_width="match_parent"
+                        android:layout_height="195dp"
+                        android:adjustViewBounds="false"
+                        android:background="@android:color/transparent"
+                        android:contentDescription="The Hobbit"
+                        android:padding="0dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/book_hobbit" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="18dp"
+                        android:layout_marginTop="0dp"
+                        android:fontFamily="serif"
+                        android:includeFontPadding="false"
+                        android:maxLines="1"
+                        android:text="The Hobbit"
+                        android:textColor="#4A2B21"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="18dp"
+                        android:layout_marginTop="2dp"
+                        android:includeFontPadding="false"
+                        android:maxLines="1"
+                        android:text="J.R.R. Tolkien"
+                        android:textColor="#9B8278"
+                        android:textSize="10sp" />
+
+                </LinearLayout>
+
+                <!-- LASKAR PELANGI -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/imgLaskarPelangi"
+                        android:layout_width="match_parent"
+                        android:layout_height="195dp"
+                        android:adjustViewBounds="false"
+                        android:background="@android:color/transparent"
+                        android:contentDescription="Laskar Pelangi"
+                        android:padding="0dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/book_laskar_pelangi" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="18dp"
+                        android:layout_marginTop="0dp"
+                        android:fontFamily="serif"
+                        android:includeFontPadding="false"
+                        android:maxLines="1"
+                        android:text="Laskar Pelangi"
+                        android:textColor="#4A2B21"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="18dp"
+                        android:layout_marginTop="2dp"
+                        android:includeFontPadding="false"
+                        android:maxLines="1"
+                        android:text="Andrea Hirata"
+                        android:textColor="#9B8278"
+                        android:textSize="10sp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!-- OUR STORES HEADER -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="8dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="serif"
+                    android:text="Our Stores"
+                    android:textColor="#4A2B21"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:id="@+id/tvMoreStores"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="More"
+                        android:textColor="#4A2B21"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:layout_marginStart="4dp"
+                        android:contentDescription="More"
+                        android:src="@drawable/arrow_next" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- STORE CAROUSEL -->
+            <LinearLayout
+                android:id="@+id/cardStore"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <androidx.viewpager2.widget.ViewPager2
+                    android:id="@+id/storeCarousel"
+                    android:layout_width="match_parent"
+                    android:layout_height="155dp"
+                    android:clipToPadding="false"
+                    android:clipChildren="false"
+                    android:overScrollMode="never" />
+
+                <!-- DOT INDICATOR -->
+                <LinearLayout
+                    android:id="@+id/storeIndicator"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="6dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/btnStorePrev"
+                        android:layout_width="12dp"
+                        android:layout_height="12dp"
+                        android:contentDescription="Previous"
+                        android:src="@drawable/arrow_left"
+                        app:tint="#B89D94" />
+
+                    <View
+                        android:id="@+id/dotStore1"
+                        android:layout_width="34dp"
+                        android:layout_height="10dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginEnd="6dp"
+                        android:background="@drawable/bg_dot_active_pill" />
+
+                    <View
+                        android:id="@+id/dotStore2"
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:layout_marginEnd="6dp"
+                        android:background="@drawable/bg_dot_inactive" />
+
+                    <View
+                        android:id="@+id/dotStore3"
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:layout_marginEnd="8dp"
+                        android:background="@drawable/bg_dot_inactive" />
+
+                    <ImageView
+                        android:id="@+id/btnStoreNext"
+                        android:layout_width="12dp"
+                        android:layout_height="12dp"
+                        android:contentDescription="Next"
+                        android:src="@drawable/arrow_right"
+                        app:tint="#B89D94" />
+
+                </LinearLayout>
+
+                <!-- STORE INFO -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tvStoreName"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="serif"
+                        android:maxLines="1"
+                        android:text="Central City Public Library"
+                        android:textColor="#4A2B21"
+                        android:textSize="10sp" />
+
+                    <TextView
+                        android:id="@+id/tvStoreTime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="10:00 - 18:00"
+                        android:textColor="#7B6258"
+                        android:textSize="8sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="12dp"
+                        android:layout_height="12dp"
+                        android:contentDescription="Location"
+                        android:src="@drawable/ic_location_gray"
+                        app:tint="#000000" />
+
+                    <TextView
+                        android:id="@+id/tvStoreAddress"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="6dp"
+                        android:text="45 Avenue, Downtown"
+                        android:textColor="#4A2B21"
+                        android:textSize="10sp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- BOTTOM NAV -->
+    <include
+        android:id="@+id/bottomNav"
+        layout="@layout/component_bottom_nav"
+        android:layout_width="0dp"
+        android:layout_height="58dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

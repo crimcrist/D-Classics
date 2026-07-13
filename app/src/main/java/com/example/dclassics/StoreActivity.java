@@ -1,24 +1,28 @@
 package com.example.dclassics;
 
 import android.content.Intent;
+import android.graphics.LinearGradient;
+import android.graphics.Shader;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
-import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 public class StoreActivity extends AppCompatActivity {
 
-    LinearLayout navHome, navBooks, navStores, navLogout;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_bookstore);
 
-        // STORE CARDS
+        setupStoreCards();
+        setupBottomNav();
+        setupNavbarActiveState();
+    }
+
+    private void setupStoreCards() {
         View storeCard1 = findViewById(R.id.storeCard1);
         View storeCard2 = findViewById(R.id.storeCard2);
         View storeCard3 = findViewById(R.id.storeCard3);
@@ -33,48 +37,24 @@ public class StoreActivity extends AppCompatActivity {
 
         setStoreCard(
                 storeCard2,
-                R.drawable.store_1,
+                R.drawable.store_2,
                 "Greenfield University Library",
                 "12 Drive, Campus West"
         );
 
         setStoreCard(
                 storeCard3,
-                R.drawable.store_1,
+                R.drawable.store_3,
                 "Rainbow Reading Center",
                 "78 Magnolia Lane, Suite 200"
         );
 
         setStoreCard(
                 storeCard4,
-                R.drawable.store_1,
+                R.drawable.store_4,
                 "Classic Book Hall",
                 "9 Heritage Street"
         );
-
-        // BOTTOM NAV
-        navHome = findViewById(R.id.navHome);
-        navBooks = findViewById(R.id.navBooks);
-        navStores = findViewById(R.id.navStores);
-        navLogout = findViewById(R.id.navLogout);
-
-        navHome.setOnClickListener(v -> {
-            Intent intent = new Intent(StoreActivity.this, MainActivity.class);
-            startActivity(intent);
-        });
-
-        navBooks.setOnClickListener(v -> {
-            Intent intent = new Intent(StoreActivity.this, MainActivity.class);
-            startActivity(intent);
-        });
-
-        navStores.setOnClickListener(v -> {
-            // Sudah berada di halaman StoreActivity, jadi tidak perlu pindah
-        });
-
-        navLogout.setOnClickListener(v -> {
-            finishAffinity();
-        });
     }
 
     private void setStoreCard(View card, int imageRes, String name, String address) {
@@ -85,5 +65,56 @@ public class StoreActivity extends AppCompatActivity {
         ivStoreImage.setImageResource(imageRes);
         tvStoreName.setText(name);
         tvStoreAddress.setText(address);
+    }
+
+    private void setupBottomNav() {
+        View navHome = findViewById(R.id.navHome);
+        View navBooks = findViewById(R.id.navBooks);
+        View navStores = findViewById(R.id.navStores);
+        View navLogout = findViewById(R.id.navLogout);
+
+        navHome.setOnClickListener(v -> {
+            startActivity(new Intent(StoreActivity.this, MainActivity.class));
+            finish();
+        });
+
+        navBooks.setOnClickListener(v -> {
+            startActivity(new Intent(StoreActivity.this, AllBooksActivity.class));
+            finish();
+        });
+
+        navStores.setOnClickListener(v -> {
+            // sudah di halaman Stores
+        });
+
+        navLogout.setOnClickListener(v -> {
+            startActivity(new Intent(StoreActivity.this, LoginActivity.class));
+            finish();
+        });
+    }
+
+    private void setupNavbarActiveState() {
+        ImageView icNavStores = findViewById(R.id.icNavStores);
+        TextView tvNavStores = findViewById(R.id.tvNavStores);
+
+        icNavStores.setImageResource(R.drawable.ic_store_gradient);
+
+        tvNavStores.post(() -> {
+            LinearGradient gradient = new LinearGradient(
+                    0,
+                    0,
+                    tvNavStores.getWidth(),
+                    0,
+                    new int[]{
+                            0xFFEBCB70,
+                            0xFFD8A93B
+                    },
+                    null,
+                    Shader.TileMode.CLAMP
+            );
+
+            tvNavStores.getPaint().setShader(gradient);
+            tvNavStores.invalidate();
+        });
     }
 }
