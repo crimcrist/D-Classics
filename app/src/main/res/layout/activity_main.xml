@@ -5,7 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#F7F4F2">
+    android:background="@color/background">
 
     <!-- CONTENT -->
     <ScrollView
@@ -41,7 +41,7 @@
                     android:layout_height="wrap_content"
                     android:fontFamily="serif"
                     android:text="Hello, "
-                    android:textColor="#4A2B21"
+                    android:textColor="@color/primary"
                     android:textSize="21sp" />
 
                 <TextView
@@ -50,7 +50,7 @@
                     android:layout_height="wrap_content"
                     android:fontFamily="serif"
                     android:text="USER"
-                    android:textColor="#C8AAA1"
+                    android:textColor="@color/secondary"
                     android:textSize="16sp"
                     android:textStyle="bold" />
             </LinearLayout>
@@ -70,7 +70,7 @@
                     android:layout_weight="1"
                     android:fontFamily="serif"
                     android:text="Featured Books"
-                    android:textColor="#4A2B21"
+                    android:textColor="@color/primary"
                     android:textSize="16sp"
                     android:textStyle="bold" />
 
@@ -85,7 +85,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="More"
-                        android:textColor="#4A2B21"
+                        android:textColor="@color/primary"
                         android:textSize="16sp"
                         android:textStyle="bold" />
 
@@ -133,7 +133,7 @@
                         android:includeFontPadding="false"
                         android:maxLines="1"
                         android:text="Atomic Habits"
-                        android:textColor="#4A2B21"
+                        android:textColor="@color/primary"
                         android:textSize="14sp" />
 
                     <TextView
@@ -144,7 +144,7 @@
                         android:includeFontPadding="false"
                         android:maxLines="1"
                         android:text="James Clear"
-                        android:textColor="#9B8278"
+                        android:textColor="@color/secondary"
                         android:textSize="10sp" />
 
                 </LinearLayout>
@@ -176,7 +176,7 @@
                         android:includeFontPadding="false"
                         android:maxLines="1"
                         android:text="Rich Dad Poor Dad"
-                        android:textColor="#4A2B21"
+                        android:textColor="@color/primary"
                         android:textSize="14sp" />
 
                     <TextView
@@ -187,7 +187,7 @@
                         android:includeFontPadding="false"
                         android:maxLines="1"
                         android:text="Robert T. Kiyosaki"
-                        android:textColor="#9B8278"
+                        android:textColor="@color/secondary"
                         android:textSize="10sp" />
 
                 </LinearLayout>
@@ -229,7 +229,7 @@
                         android:includeFontPadding="false"
                         android:maxLines="1"
                         android:text="The Hobbit"
-                        android:textColor="#4A2B21"
+                        android:textColor="@color/primary"
                         android:textSize="14sp" />
 
                     <TextView
@@ -240,7 +240,7 @@
                         android:includeFontPadding="false"
                         android:maxLines="1"
                         android:text="J.R.R. Tolkien"
-                        android:textColor="#9B8278"
+                        android:textColor="@color/secondary"
                         android:textSize="10sp" />
 
                 </LinearLayout>
@@ -272,7 +272,7 @@
                         android:includeFontPadding="false"
                         android:maxLines="1"
                         android:text="Laskar Pelangi"
-                        android:textColor="#4A2B21"
+                        android:textColor="@color/primary"
                         android:textSize="14sp" />
 
                     <TextView
@@ -283,7 +283,7 @@
                         android:includeFontPadding="false"
                         android:maxLines="1"
                         android:text="Andrea Hirata"
-                        android:textColor="#9B8278"
+                        android:textColor="@color/secondary"
                         android:textSize="10sp" />
 
                 </LinearLayout>
@@ -305,7 +305,7 @@
                     android:layout_weight="1"
                     android:fontFamily="serif"
                     android:text="Our Stores"
-                    android:textColor="#4A2B21"
+                    android:textColor="@color/primary"
                     android:textSize="16sp"
                     android:textStyle="bold" />
 
@@ -320,7 +320,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="More"
-                        android:textColor="#4A2B21"
+                        android:textColor="@color/primary"
                         android:textSize="16sp"
                         android:textStyle="bold" />
 
@@ -365,7 +365,7 @@
                         android:layout_height="12dp"
                         android:contentDescription="Previous"
                         android:src="@drawable/arrow_left"
-                        app:tint="#B89D94" />
+                        app:tint="@color/secondary" />
 
                     <View
                         android:id="@+id/dotStore1"
@@ -395,7 +395,7 @@
                         android:layout_height="12dp"
                         android:contentDescription="Next"
                         android:src="@drawable/arrow_right"
-                        app:tint="#B89D94" />
+                        app:tint="@color/secondary" />
 
                 </LinearLayout>
 
@@ -415,7 +415,7 @@
                         android:fontFamily="serif"
                         android:maxLines="1"
                         android:text="Central City Public Library"
-                        android:textColor="#4A2B21"
+                        android:textColor="@color/primary"
                         android:textSize="10sp" />
 
                     <TextView
@@ -439,7 +439,7 @@
                         android:layout_height="12dp"
                         android:contentDescription="Location"
                         android:src="@drawable/ic_location_gray"
-                        app:tint="#000000" />
+                        app:tint="@color/black" />
 
                     <TextView
                         android:id="@+id/tvStoreAddress"
@@ -447,7 +447,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginStart="6dp"
                         android:text="45 Avenue, Downtown"
-                        android:textColor="#4A2B21"
+                        android:textColor="@color/primary"
                         android:textSize="10sp" />
 
                 </LinearLayout>

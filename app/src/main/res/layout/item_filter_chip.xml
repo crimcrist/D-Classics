@@ -8,6 +8,6 @@
     android:minWidth="78dp"
     android:paddingStart="18dp"
     android:paddingEnd="18dp"
-    android:textColor="#FFFFFF"
+    android:textColor="@color/white"
     android:textSize="13sp"
     android:textStyle="bold" />

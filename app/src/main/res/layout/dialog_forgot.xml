@@ -100,7 +100,7 @@
             android:background="@drawable/bg_button_primary"
             android:gravity="center"
             android:text="@string/submit"
-            android:textColor="@color/on_primary"
+            android:textColor="@color/background"
             android:textSize="16sp"
             android:letterSpacing="0.05"
             android:fontFamily="@font/montserrat_semibold" />
@@ -131,7 +131,7 @@
             android:background="@drawable/bg_button_primary"
             android:gravity="center"
             android:text="@string/action_continue"
-            android:textColor="@color/on_primary"
+            android:textColor="@color/background"
             android:textSize="16sp"
             android:letterSpacing="0.05"
             android:fontFamily="@font/montserrat_semibold" />

@@ -48,7 +48,7 @@
                 android:layout_height="wrap_content"
                 android:fontFamily="serif"
                 android:text="Explore Bookstore"
-                android:textColor="#4A2B21"
+                android:textColor="@color/primary"
                 android:textSize="26sp"
                 android:textStyle="bold" />
 
@@ -59,7 +59,7 @@
                 android:fontFamily="serif"
                 android:lineSpacingExtra="2dp"
                 android:text="Find cozy bookstores, premium collections, and your\nnext favorite reading destination."
-                android:textColor="#4A2B21"
+                android:textColor="@color/primary"
                 android:textSize="13sp" />
 
             <!-- CARD -->

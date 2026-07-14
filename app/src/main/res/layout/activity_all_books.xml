@@ -4,7 +4,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#F7F4F2">
+    android:background="@color/background">
 
     <LinearLayout
         android:id="@+id/topContent"
@@ -24,7 +24,7 @@
             android:fontFamily="serif"
             android:includeFontPadding="false"
             android:text="D'Classics Books"
-            android:textColor="#4A2B21"
+            android:textColor="@color/primary"
             android:textSize="31sp"
             android:textStyle="bold" />
 
@@ -35,14 +35,14 @@
             android:fontFamily="serif"
             android:includeFontPadding="false"
             android:text="Explore our collection"
-            android:textColor="#4A2B21"
+            android:textColor="@color/primary"
             android:textSize="14sp" />
 
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:layout_marginTop="8dp"
-            app:cardBackgroundColor="#FFFFFF"
+            app:cardBackgroundColor="@color/white"
             app:cardCornerRadius="14dp"
             app:cardElevation="4dp"
             app:cardMaxElevation="5dp"
@@ -64,7 +64,7 @@
                     android:layout_gravity="center_vertical"
                     android:contentDescription="Search icon"
                     android:src="@drawable/ic_search"
-                    app:tint="#5A382C" />
+                    app:tint="@color/primary" />
 
                 <EditText
                     android:id="@+id/etSearchBook"
@@ -79,7 +79,7 @@
                     android:paddingTop="0dp"
                     android:paddingBottom="0dp"
                     android:singleLine="true"
-                    android:textColor="#4A2B21"
+                    android:textColor="#5E5E5E"
                     android:textColorHint="#777777"
                     android:textSize="14sp" />
 
@@ -112,7 +112,7 @@
                     android:background="@drawable/bg_filter_active_stroke"
                     android:gravity="center"
                     android:text="All"
-                    android:textColor="#FFFFFF"
+                    android:textColor="@color/white"
                     android:textSize="13sp"
                     android:textStyle="bold" />
 
@@ -140,7 +140,7 @@
                     android:background="@drawable/bg_filter_inactive_stroke"
                     android:gravity="center"
                     android:text="Fiction"
-                    android:textColor="#5A382C"
+                    android:textColor="@color/primary"
                     android:textSize="13sp"
                     android:textStyle="bold" />
 
@@ -168,7 +168,7 @@
                     android:background="@drawable/bg_filter_inactive_stroke"
                     android:gravity="center"
                     android:text="Non-Fiction"
-                    android:textColor="#5A382C"
+                    android:textColor="@color/primary"
                     android:textSize="13sp"
                     android:textStyle="bold" />
 
@@ -211,7 +211,7 @@
             android:layout_height="match_parent"
             android:padding="18dp"
             android:src="@drawable/ic_cart"
-            app:tint="#FFFFFF" />
+            app:tint="@color/white" />
 
         <TextView
             android:layout_width="22dp"
@@ -222,7 +222,7 @@
             android:background="@drawable/bg_badge"
             android:gravity="center"
             android:text="3"
-            android:textColor="#FFFFFF"
+            android:textColor="@color/white"
             android:textSize="12sp"
             android:textStyle="bold" />
 

@@ -33,7 +33,7 @@
             android:layout_marginStart="10dp"
             android:fontFamily="serif"
             android:text="@string/book_store_title"
-            android:textColor="#4A2B21"
+            android:textColor="@color/primary"
             android:textSize="25sp"
             android:textStyle="bold" />
 
@@ -96,7 +96,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/book_title"
-                        android:textColor="#FFFFFF"
+                        android:textColor="@color/white"
                         android:textSize="17sp"
                         android:textStyle="bold" />
 
@@ -105,7 +105,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/book_author"
-                        android:textColor="#FFFFFF"
+                        android:textColor="@color/primary"
                         android:textSize="11sp" />
 
                 </LinearLayout>
@@ -143,7 +143,7 @@
                 android:layout_marginTop="18dp"
                 android:layout_marginEnd="20dp"
                 android:layout_marginBottom="2dp"
-                app:cardBackgroundColor="#FFFFFF"
+                app:cardBackgroundColor="@color/white"
                 app:cardCornerRadius="12dp"
                 app:cardElevation="10dp"
                 app:cardPreventCornerOverlap="false"
@@ -192,7 +192,7 @@
                 android:layout_marginTop="10dp"
                 android:layout_marginEnd="20dp"
                 android:layout_marginBottom="4dp"
-                app:cardBackgroundColor="#FFFFFF"
+                app:cardBackgroundColor="@color/white"
                 app:cardCornerRadius="12dp"
                 app:cardElevation="10dp"
                 app:cardPreventCornerOverlap="false"
@@ -270,7 +270,7 @@
                 android:layout_marginTop="14dp"
                 android:layout_marginEnd="20dp"
                 android:layout_marginBottom="4dp"
-                app:cardBackgroundColor="#FFFFFF"
+                app:cardBackgroundColor="@color/white"
                 app:cardCornerRadius="12dp"
                 app:cardElevation="8dp"
                 app:cardPreventCornerOverlap="false"
@@ -287,7 +287,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/synopsis_title"
-                        android:textColor="#AE938A"
+                        android:textColor="@color/secondary"
                         android:textSize="16sp"
                         android:textStyle="bold" />
 
@@ -310,7 +310,7 @@
                 android:layout_marginStart="20dp"
                 android:layout_marginTop="12dp"
                 android:layout_marginEnd="20dp"
-                android:background="#AE938A" />
+                android:background="@color/secondary" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -320,7 +320,7 @@
                 android:layout_marginEnd="20dp"
                 android:padding="3dp"
                 android:text="@string/select_option"
-                android:textColor="#AE938A"
+                android:textColor="@color/secondary"
                 android:textSize="16sp"
                 android:textStyle="bold" />
 
@@ -341,7 +341,7 @@
                     android:layout_width="0dp"
                     android:layout_height="48dp"
                     android:layout_weight="1"
-                    app:cardBackgroundColor="#FFFFFF"
+                    app:cardBackgroundColor="@color/white"
                     app:cardCornerRadius="10dp"
                     app:cardElevation="8dp"
                     app:cardPreventCornerOverlap="false"
@@ -383,7 +383,7 @@
                         android:stateListAnimator="@null"
                         android:text="@string/physical"
                         android:textAllCaps="false"
-                        android:textColor="#FFFFFF"
+                        android:textColor="@color/white"
                         android:textStyle="bold" />
 
                 </androidx.cardview.widget.CardView>
