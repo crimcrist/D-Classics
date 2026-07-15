@@ -27,8 +27,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
-                android:fontFamily="serif"
-                android:textColor="#241713"
+                android:fontFamily="@font/eb_garamond_medium"
+                android:textColor="@color/brown1"
                 android:textSize="21sp" />
 
             <TextView
@@ -36,7 +36,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="12dp"
-                android:textColor="#241713"
+                android:textColor="@color/brown1"
+                android:fontFamily="@font/montserrat_semibold"
                 android:textSize="13sp"
                 android:textStyle="bold" />
 
@@ -45,7 +46,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
-                android:textColor="#111111"
+                android:fontFamily="@font/montserrat_semibold"
+                android:textColor="@color/brown1"
                 android:textSize="12sp" />
 
         </LinearLayout>

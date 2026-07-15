@@ -39,7 +39,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:fontFamily="serif"
+                    android:fontFamily="@font/eb_garamond_medium"
                     android:text="Hello, "
                     android:textColor="@color/primary"
                     android:textSize="21sp" />
@@ -48,7 +48,7 @@
                     android:id="@+id/tv_welcome"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:fontFamily="serif"
+                    android:fontFamily="@font/montserrat_semibold"
                     android:text="USER"
                     android:textColor="@color/secondary"
                     android:textSize="16sp"
@@ -68,7 +68,7 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:fontFamily="serif"
+                    android:fontFamily="@font/montserrat_semibold"
                     android:text="Featured Books"
                     android:textColor="@color/primary"
                     android:textSize="16sp"
@@ -85,6 +85,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="More"
+                        android:fontFamily="@font/montserrat_semibold"
                         android:textColor="@color/primary"
                         android:textSize="16sp"
                         android:textStyle="bold" />
@@ -129,7 +130,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginStart="18dp"
                         android:layout_marginTop="0dp"
-                        android:fontFamily="serif"
+                        android:fontFamily="@font/eb_garamond_medium"
                         android:includeFontPadding="false"
                         android:maxLines="1"
                         android:text="Atomic Habits"
@@ -142,6 +143,7 @@
                         android:layout_marginStart="18dp"
                         android:layout_marginTop="2dp"
                         android:includeFontPadding="false"
+                        android:fontFamily="@font/montserrat_semibold"
                         android:maxLines="1"
                         android:text="James Clear"
                         android:textColor="@color/secondary"
@@ -172,7 +174,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginStart="18dp"
                         android:layout_marginTop="0dp"
-                        android:fontFamily="serif"
+                        android:fontFamily="@font/eb_garamond_medium"
                         android:includeFontPadding="false"
                         android:maxLines="1"
                         android:text="Rich Dad Poor Dad"
@@ -186,6 +188,7 @@
                         android:layout_marginTop="2dp"
                         android:includeFontPadding="false"
                         android:maxLines="1"
+                        android:fontFamily="@font/montserrat_semibold"
                         android:text="Robert T. Kiyosaki"
                         android:textColor="@color/secondary"
                         android:textSize="10sp" />
@@ -225,7 +228,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginStart="18dp"
                         android:layout_marginTop="0dp"
-                        android:fontFamily="serif"
+                        android:fontFamily="@font/eb_garamond_medium"
                         android:includeFontPadding="false"
                         android:maxLines="1"
                         android:text="The Hobbit"
@@ -240,6 +243,7 @@
                         android:includeFontPadding="false"
                         android:maxLines="1"
                         android:text="J.R.R. Tolkien"
+                        android:fontFamily="@font/montserrat_semibold"
                         android:textColor="@color/secondary"
                         android:textSize="10sp" />
 
@@ -268,7 +272,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginStart="18dp"
                         android:layout_marginTop="0dp"
-                        android:fontFamily="serif"
+                        android:fontFamily="@font/eb_garamond_medium"
                         android:includeFontPadding="false"
                         android:maxLines="1"
                         android:text="Laskar Pelangi"
@@ -283,6 +287,7 @@
                         android:includeFontPadding="false"
                         android:maxLines="1"
                         android:text="Andrea Hirata"
+                        android:fontFamily="@font/montserrat_semibold"
                         android:textColor="@color/secondary"
                         android:textSize="10sp" />
 
@@ -303,7 +308,7 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:fontFamily="serif"
+                    android:fontFamily="@font/montserrat_semibold"
                     android:text="Our Stores"
                     android:textColor="@color/primary"
                     android:textSize="16sp"
@@ -320,6 +325,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="More"
+                        android:fontFamily="@font/montserrat_semibold"
                         android:textColor="@color/primary"
                         android:textSize="16sp"
                         android:textStyle="bold" />
@@ -412,7 +418,7 @@
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:fontFamily="serif"
+                        android:fontFamily="@font/eb_garamond_medium"
                         android:maxLines="1"
                         android:text="Central City Public Library"
                         android:textColor="@color/primary"
@@ -421,9 +427,11 @@
                     <TextView
                         android:id="@+id/tvStoreTime"
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        android:layout_height="match_parent"
+                        android:fontFamily="@font/montserrat_semibold"
                         android:text="10:00 - 18:00"
-                        android:textColor="#7B6258"
+                        android:textColor="@color/secondary"
+                        android:gravity="center_vertical"
                         android:textSize="8sp" />
                 </LinearLayout>
 
@@ -446,6 +454,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="6dp"
+                        android:fontFamily="@font/eb_garamond_regular"
                         android:text="45 Avenue, Downtown"
                         android:textColor="@color/primary"
                         android:textSize="10sp" />

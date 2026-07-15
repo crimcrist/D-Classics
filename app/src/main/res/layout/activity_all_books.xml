@@ -21,7 +21,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:fontFamily="serif"
+            android:fontFamily="@font/eb_garamond_medium"
             android:includeFontPadding="false"
             android:text="D'Classics Books"
             android:textColor="@color/primary"
@@ -32,7 +32,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
-            android:fontFamily="serif"
+            android:fontFamily="@font/eb_garamond_medium"
             android:includeFontPadding="false"
             android:text="Explore our collection"
             android:textColor="@color/primary"
@@ -79,8 +79,8 @@
                     android:paddingTop="0dp"
                     android:paddingBottom="0dp"
                     android:singleLine="true"
-                    android:textColor="#5E5E5E"
-                    android:textColorHint="#777777"
+                    android:textColor="@color/black"
+                    android:textColorHint="#5E5E5E"
                     android:textSize="14sp" />
 
             </LinearLayout>
@@ -111,6 +111,7 @@
                     android:layout_height="match_parent"
                     android:background="@drawable/bg_filter_active_stroke"
                     android:gravity="center"
+                    android:fontFamily="@font/montserrat_semibold"
                     android:text="All"
                     android:textColor="@color/white"
                     android:textSize="13sp"
@@ -139,6 +140,7 @@
                     android:layout_height="match_parent"
                     android:background="@drawable/bg_filter_inactive_stroke"
                     android:gravity="center"
+                    android:fontFamily="@font/montserrat_semibold"
                     android:text="Fiction"
                     android:textColor="@color/primary"
                     android:textSize="13sp"
@@ -167,6 +169,7 @@
                     android:layout_height="match_parent"
                     android:background="@drawable/bg_filter_inactive_stroke"
                     android:gravity="center"
+                    android:fontFamily="@font/montserrat_semibold"
                     android:text="Non-Fiction"
                     android:textColor="@color/primary"
                     android:textSize="13sp"

@@ -296,7 +296,7 @@
             android:text="@string/copyright"
             android:textColor="@color/secondary"
             android:textSize="10sp"
-            android:fontFamily="@font/eb_garamond_medium" />
+            android:fontFamily="@font/eb_garamond_regular" />
 
     </LinearLayout>
 </ScrollView>

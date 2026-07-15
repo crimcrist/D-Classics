@@ -10,8 +10,9 @@
     <color name="hint">#C7C3C3</color>
     <color name="error">#C62828</color>
     <color name="tertiary">#F8F0E2</color>
+    <color name="brown1">#26160E</color>
 
     <!--  on_primary ->   background
-phone_bar -> tertiary-->
+            phone_bar -> tertiary-->
 
 </resources>
